@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إيقونات في مربعات بنفسجية</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #3b155f; /* الخلفية بنفسجية */
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 200px;
+    }
+    .link-item {
+      margin-bottom: 12px;
+    }
+    .link-item a {
+      display: flex;
+      flex-direction: column; /* عمودي داخل المربّع */
+      align-items: center;
+      justify-content: center;
+      background-color: #000; /* إطار أسود */
+      color: #fff;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.2s;
+      width: 100%;
+    }
+    .link-item a .icon {
+      font-size: 28px;
+      transition: transform 0.3s;
+    }
+    .link-item a span {
+      margin-top: 8px;
+      font-size: 15px;
+      text-align: center;
+    }
+    .link-item a:hover {
+      background-color: #333;
+      transform: scale(1.08);
+    }
+    .link-item a:hover .icon {
+      transform: rotate(15deg) scale(1.25);
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="link-list">
+    <li class="link-item">
+      <a href="https://wa.me/0600020064" target="_blank">
+        <i class="fa fa-whatsapp icon" aria-hidden="true"></i>
+        <span>WhatsApp</span>
+      </a>
+    </li>
+    <li class="link-item">
+      <a href="https://www.instagram.com/syphaxmaroc/" target="_blank">
+        <i class="fa fa-instagram icon" aria-hidden="true"></i>
+        <span>Instagram</span>
+      </a>
+    </li>
+    <li class="link-item">
+      <a href="https://web.facebook.com/profile.php?id=61579382245233" target="_blank">
+        <i class="fa fa-facebook icon" aria-hidden="true"></i>
+        <span>Facebook</span>
+      </a>
+    </li>
+    <li class="link-item">
+      <a href="https://nizarelkaddouri.github.io/syphax.ma/" target="_blank">
+        <i class="fa fa-globe icon" aria-hidden="true"></i>
+        <span>Site web de Syphax</span>
+      </a>
+    </li>
+  </ul>
+
+</body>
+</html>
